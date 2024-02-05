@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = gnome-shell
+
+[Action]
+Description = Change GDM Greeter
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/change-gdm-greeter.sh

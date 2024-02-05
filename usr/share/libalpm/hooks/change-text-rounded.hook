@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = gnome-control-center
+Target = chili-gnome-skel
+
+[Action]
+Description = Change About logo from Gnome
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/change-text-rounded.sh
